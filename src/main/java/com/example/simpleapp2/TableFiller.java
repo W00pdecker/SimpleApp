@@ -48,9 +48,9 @@ public class TableFiller {
                         + "VALUES (?, ?, ?)", new BatchPreparedStatementSetter() {
                     public void setValues(PreparedStatement ps, int i) throws SQLException {
                         Person person = persons.get(i);
-                        ps.setString(1, person.getFullName());
-                        ps.setDate(2, person.getBirth());
-                        ps.setString(3, person.getSex());
+                        ps.setString(1, person.getFullname());
+                        ps.setDate(2, person.getBIRTH());
+                        ps.setString(3, person.getSEX());
                     }
 
                     public int getBatchSize() {

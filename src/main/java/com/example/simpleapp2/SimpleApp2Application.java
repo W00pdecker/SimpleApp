@@ -55,9 +55,9 @@ public class SimpleApp2Application implements CommandLineRunner {
 
     private void addLine(String... args) {
         String query = "INSERT INTO Persons( FULLNAME, BIRTH, SEX) " +
-                "VALUES ('" + args[0] + "', '"
-                + args[1] + "', '"
-                + args[2] + "')";
+                "VALUES ('" + args[1] + "', '"
+                + args[2] + "', '"
+                + args[3] + "')";
         jdbcTemplate.update(query);
         System.out.println("Entry added");
     }
